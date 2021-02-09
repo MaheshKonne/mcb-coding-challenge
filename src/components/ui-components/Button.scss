@@ -1,0 +1,20 @@
+button {
+    color: #fff;
+    font-weight: bold;
+    background-color: transparent;
+
+    &.contained {
+        background-color: #ba4188;
+        &:hover {
+            background-color: #712c54;
+        }
+    }
+
+    &.outlined {
+        background-color: #fff;
+        border: solid 1px #ba4188;
+        &:hover {
+            border-width: 3px;
+        }
+    }
+}

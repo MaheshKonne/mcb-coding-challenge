@@ -1,0 +1,33 @@
+.header {
+    width: 100%;
+    height: 88px;
+    border: 1px solid black;
+
+    .content-container {
+        display: flex;
+        max-width: 1440px;
+        height: 100%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    ul li {
+        display: inline-block;
+        margin-left: 36px;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-left: 60px;
+        }
+    }
+    button {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 20px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
