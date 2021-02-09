@@ -1,0 +1,28 @@
+@import '../../../constants.scss';
+
+.primaryContent {
+    max-width: $contentWidth;
+    display: flex;
+    margin: 80px auto;
+    align-items: center;
+    text-align: left;
+
+    .descContainer {
+        display: flex;
+        margin-top: 55px;
+        color: $grey;
+
+        img {
+            width: 25px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .imageContainer {
+        width: auto;
+        max-width: 540px;
+        img {
+            width: 100%;
+        }
+    }
+}

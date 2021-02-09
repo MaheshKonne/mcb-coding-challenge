@@ -1,0 +1,15 @@
+@import '../../../constants.scss';
+
+footer {
+    width: 100%;
+    max-width: $contentWidth;
+    margin: 0 auto;
+    color: #707070;
+    font-size: 11px;
+    text-align: left;
+    margin-top: 20px;
+
+    div {
+        margin: 40px auto;
+    }
+}
