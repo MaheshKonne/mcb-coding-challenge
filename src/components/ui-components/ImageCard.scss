@@ -1,0 +1,19 @@
+@import '../../../constants.scss';
+
+.imageCard {
+    width: 100%;
+    max-width: 255px;
+    text-align: center;
+
+    .title {
+        color: $black;
+        margin-top: 32px;
+        margin-bottom: 13px;
+    }
+
+    .description {
+        font-size: 14px;
+        line-height: 20px;
+        color: $grey;
+    }
+}

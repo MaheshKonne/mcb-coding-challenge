@@ -1,8 +1,11 @@
 .App {
-  text-align: center;
+	.headerSection {
+		background-image: url('../assets/hero.png');
+		background-size: 100% 100%;
+	}
+	.content-container {
+		max-width: 1440px;
+		width: 100%;
+	}
 }
 
-.content-container {
-  max-width: 1440px;
-  width: 100%;
-}

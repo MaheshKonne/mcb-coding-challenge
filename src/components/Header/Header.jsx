@@ -5,7 +5,7 @@ import './Header.scss';
 const Header = () => {
     return (
         <div className="header">
-            <div className="content-container">
+            <div className="contentContainer">
                 <div>
                     <span>DSGN</span>
                     <span>.mu</span>

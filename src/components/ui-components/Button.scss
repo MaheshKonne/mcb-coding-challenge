@@ -1,20 +1,28 @@
+@import '../../../constants.scss';
+
 button {
-    color: #fff;
+    color: $white;
     font-weight: bold;
     background-color: transparent;
 
     &.contained {
-        background-color: #ba4188;
+        background-color: $primary;
         &:hover {
             background-color: #712c54;
         }
     }
 
     &.outlined {
-        background-color: #fff;
-        border: solid 1px #ba4188;
+        color: $primary;
+        background-color: $white;
+        border: solid 1px $primary;
         &:hover {
             border-width: 3px;
+        }
+        &.inverted {
+            color: $white;
+            background-color: transparent;
+            border: solid 1px $white;
         }
     }
 }

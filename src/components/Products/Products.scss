@@ -1,0 +1,10 @@
+@import '../../../constants.scss';
+
+.products {
+    display: flex;
+    width: 100%;
+    max-width: $contentWidth;
+    margin: 0 auto;
+    margin-bottom: 74px;
+    justify-content: space-between;
+}

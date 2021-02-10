@@ -26,3 +26,7 @@ button {
   border: none;
   outline: none;
 }
+
+button, li, a {
+  cursor: pointer;
+}

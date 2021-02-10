@@ -7,10 +7,21 @@
     align-items: center;
     text-align: left;
 
+    .titleContainer {
+        max-width: 445px;
+        line-height: 40px;
+    }
+
     .descContainer {
         display: flex;
+        font-size: 16px;
+        line-height: 22px;
         margin-top: 55px;
         color: $grey;
+
+        > div {
+            margin-right: 33px;
+        }
 
         img {
             width: 25px;
@@ -19,8 +30,9 @@
     }
 
     .imageContainer {
-        width: auto;
+        width: 100%;
         max-width: 540px;
+
         img {
             width: 100%;
         }

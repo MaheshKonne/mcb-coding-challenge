@@ -9,11 +9,13 @@ const PrimaryContent = () => {
     return (
         <section className="primaryContent">
             <div>
-                <Title size="l" variant="primary">
-                    Fostering creativity and 
-                    innovationeam definiebas 
-                    reformidans, exerci persecuti
-                </Title>
+                <div className="titleContainer">
+                    <Title size="l" variant="primary">
+                        Fostering creativity and 
+                        innovationeam definiebas 
+                        reformidans, exerci persecuti
+                    </Title>
+                </div>
                 <div className="descContainer">
                     <div>
                         <img src={boxImg} />
