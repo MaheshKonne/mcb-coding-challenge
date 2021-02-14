@@ -1,0 +1,24 @@
+.contact {
+    height: 600px;
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+
+    > div {
+        width: 50%;
+        height: 100%;
+    }
+
+    .imageContainer {
+        margin-right: 38px;
+    }
+
+    .title, .checkbox {
+        margin-bottom: 40px;
+    }
+
+    #float-label {
+        margin-bottom: 32px;
+    }
+}

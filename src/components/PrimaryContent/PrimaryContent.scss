@@ -6,10 +6,33 @@
     margin: 80px auto;
     align-items: center;
     text-align: left;
+    flex-direction: column;
+
+    @include desktop {
+        flex-direction: row;
+    }
+
+    .textContainer {
+        @include tablet {
+            max-width: 80%;
+        }
+    }
 
     .titleContainer {
         max-width: 445px;
         line-height: 40px;
+        text-align: center;
+        margin: 0 auto;
+
+        @include tablet {
+            max-width: 100%;
+        }
+
+        @include desktop {
+            text-align: left;
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
 
     .descContainer {
@@ -18,9 +41,27 @@
         line-height: 22px;
         margin-top: 55px;
         color: $grey;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+
+        @include desktop {
+            margin-left: 0;
+            margin-right: 0;
+            text-align: left;
+
+            > div {
+                &:last-child {
+                    margin-right: 33px;
+                }
+            }
+        }
 
         > div {
             margin-right: 33px;
+            &:last-child {
+                margin-right: 0;
+            }
         }
 
         img {
@@ -32,6 +73,11 @@
     .imageContainer {
         width: 100%;
         max-width: 540px;
+        margin-top: 30px;
+
+        @include desktop {
+            margin-top: 0;
+        }
 
         img {
             width: 100%;

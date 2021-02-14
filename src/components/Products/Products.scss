@@ -2,9 +2,21 @@
 
 .products {
     display: flex;
-    width: 100%;
+    width: auto;
     max-width: $contentWidth;
     margin: 0 auto;
     margin-bottom: 74px;
     justify-content: space-between;
+    flex-direction: column;
+
+    @include tablet {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    @include desktop {
+        width: 90%;
+        flex-direction: row;
+    }
 }

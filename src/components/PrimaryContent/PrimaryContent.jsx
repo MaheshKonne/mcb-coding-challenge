@@ -8,7 +8,7 @@ import Title from '../ui-components/Title';
 const PrimaryContent = () => {
     return (
         <section className="primaryContent">
-            <div>
+            <div className="textContainer">
                 <div className="titleContainer">
                     <Title size="l" variant="primary">
                         Fostering creativity and 

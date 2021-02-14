@@ -7,3 +7,12 @@ $greyWhite : #f4f4f4;
 $black: #373f41;
 $grey: #737b7d;
 $lightgrey: #707070;
+
+
+@mixin tablet {
+    @media (min-width: 768px) { @content; }
+}
+
+@mixin desktop {
+    @media (min-width: 1024px) { @content; }
+}

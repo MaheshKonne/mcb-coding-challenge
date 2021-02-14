@@ -1,4 +1,9 @@
+@import '../../constants.scss';
+
 .App {
+	display: flex;
+	flex-direction: column;
+
 	.headerSection {
 		background-image: url('../assets/hero.png');
 		background-size: 100% 100%;
@@ -6,6 +11,15 @@
 	.content-container {
 		max-width: 1440px;
 		width: 100%;
+	}
+
+	a {
+		font-size: 14px;
+		font-weight: 600;
+		color: #ba4188;
+		&:hover {
+			color: #d9e4e6;
+		}
 	}
 }
 

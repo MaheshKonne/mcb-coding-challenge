@@ -5,23 +5,63 @@
     height: 88px;
     color: $white;
 
+    @include desktop {
+        display: flex;
+        justify-content: center;
+    }
+
     .contentContainer {
         display: flex;
         max-width: $contentWidth;
         height: 100%;
-        margin: 0 auto;
+        margin: 0 10px;
         align-items: center;
         justify-content: space-between;
+
+        @include tablet {
+            margin: 0 30px;
+            ul {
+                display: block;
+                li {
+                    margin-left: 25px;
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                    &:last-child {
+                        margin-left: 25px;
+                    }
+                }
+            }
+        }
+
+        @include desktop {
+            width: 100%;
+            ul {
+                display: block;
+                li {
+                    margin-left: 35px;
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                    &:last-child {
+                        margin-left: 60px;
+                    }
+                }
+            }
+        }
     }
 
-    ul li {
-        display: inline-block;
-        margin-left: 36px;
-        &:first-child {
-            margin-left: 0;
-        }
-        &:last-child {
-            margin-left: 60px;
+    ul {
+        display: none;
+        li {
+            display: inline-block;
+            margin-left: 36px;
+            &:first-child {
+                margin-left: 0;
+            }
+            &:last-child {
+                margin-left: 60px;
+            }
         }
     }
     button {
