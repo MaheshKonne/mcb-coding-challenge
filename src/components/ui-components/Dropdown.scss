@@ -1,0 +1,86 @@
+.custom-select-wrapper {
+    position: relative;
+
+
+    .icon {
+        margin-left: auto;
+        path {
+            stroke: #c3cbcd;
+        }
+    }
+
+    .custom-select {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: #f4f5f4;
+
+        .label {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            transform-origin: top left;
+            transition: all 0.2s ease-out;
+        }
+
+        &.open {
+            background-color: #d5d8d5;
+
+            .icon {
+                transform: rotate(180deg);
+                path {
+                    stroke: #fff;
+                }
+            }
+
+            .custom-options {
+                opacity: 1;
+                visibility: visible;
+                pointer-events: all;
+            }
+        }
+
+        &.animate {
+            .label {
+                top: -20%;
+                font-size: 11px;
+            }
+        }
+    }
+    .custom-select__trigger {
+        display: flex;
+        align-items: center;
+        padding: 0 22px;
+        height: 48px;
+        cursor: pointer;
+    }
+    .custom-options {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #f4f5f4;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        z-index: 2;
+        text-align: left;
+        color: #737b7d;
+
+
+        span {
+            padding: 16px 14px 14px 16px;
+            border-bottom: solid 1px #d5d8d5;
+        }
+    }
+    .custom-option:hover {
+        cursor: pointer;
+        background-color: #d5d8d5;
+    }
+    .custom-option.selected {
+        color: #ffffff;
+        background-color: #305c91;
+    }
+}

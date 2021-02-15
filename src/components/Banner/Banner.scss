@@ -11,8 +11,10 @@
     text-align: center;
 
     @include desktop {
+        justify-content: flex-end;
+        margin-right: 30px;
+
         .bannerContent {
-            margin: 0 auto;
             text-align: left;
         }
     }
@@ -20,10 +22,6 @@
     .bannerContent {
         width: 430px;
 
-        @include desktop {
-            margin: 0 auto;
-            text-align: left;
-        }
     }
 
     .bannerDesc {

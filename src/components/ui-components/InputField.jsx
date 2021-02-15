@@ -1,12 +1,11 @@
 import { useState } from 'react';
 import './InputField.scss';
 
-const InputField = ({ label }) => {
-    const [value, setValue] = useState('');
+const InputField = ({ label, value, onChange, type = 'text' }) => {
     const [isActive, setIsActive] = useState(false);
 
     const handleTextChange = text => {
-        setValue(text);
+        onChange(text);
         
         if (text) {
             setIsActive(true);
@@ -18,7 +17,7 @@ const InputField = ({ label }) => {
     return (
         <div id="float-label">
             <input
-                type="text"
+                type={type}
                 value={value}
                 onChange={(e) => handleTextChange(e.target.value)} />
             <label htmlFor="email" className={isActive ? 'active' : ''}>{label}</label>

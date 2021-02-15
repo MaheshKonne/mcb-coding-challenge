@@ -4,19 +4,31 @@ import InputField from '../ui-components/InputField';
 import Title from '../ui-components/Title';
 import './Contact.scss';
 import contactImg from '../../assets/Illustration.png';
+import { useState } from 'react';
+import DateInput from '../ui-components/DateInput';
+import Dropdown from '../ui-components/Dropdown';
 
 const Contact = () => {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [dob, setDob] = useState('');
+
+    const onDesignationChange = selectedDesignation => {
+        console.log(`Selected designation is ${selectedDesignation}`);
+    }
+
     return (
         <div className="contact">
             <div className="imageContainer">
-                <img src="" />
+                <img src={contactImg} />
             </div>
-            <div>
+            <div className="formContainer">
                 <Title size="l" color="black">Join the DSGN Community.</Title>
-                <InputField label="Name" />
-                <InputField label="Email address" />
-                <InputField label="Date of birth" />
+                <InputField label="Name" value={name} onChange={setName} />
+                <InputField label="Email address" value={email} onChange={setEmail} />
+                <DateInput label="Date of birth" value={dob} onChange={setDob} />
                 <InputField label="Designation" />
+                <Dropdown label="Designation" options={['Tesla', 'Volvo', 'Mercedes']} onChange={onDesignationChange} />
                 <Checkbox>
                     <span>
                         Accept the <a href="#">Terms & Conditions</a>

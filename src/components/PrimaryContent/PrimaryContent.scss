@@ -9,6 +9,10 @@
     flex-direction: column;
 
     @include desktop {
+        margin: 80px auto;
+    }
+
+    @include desktop {
         flex-direction: row;
     }
 

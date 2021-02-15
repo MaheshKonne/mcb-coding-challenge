@@ -1,21 +1,56 @@
+@import '../../../constants.scss';
+
 .contact {
-    height: 600px;
-    width: 100%;
+    height: auto;
     max-width: 1110px;
-    margin: 0 auto;
+    margin: 0 10px;
     display: flex;
+    flex-direction: column-reverse;
+
+    @include tablet {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    @include desktop {
+        height: 600px;
+        max-width: 100%;
+        flex-direction: row;
+
+        > div {
+            width: 50%;
+        }
+    }
 
     > div {
-        width: 50%;
         height: 100%;
     }
 
     .imageContainer {
-        margin-right: 38px;
+        @include tablet {
+            margin-right: 38px;
+        }
+        @include desktop {
+            margin-top: 10px;
+        }
+        img {
+            width: 100%;
+        }
+    }
+
+    .formContainer {
+        text-align: center;
+        #float-label {
+            maxwidth: 400px;
+        }
     }
 
     .title, .checkbox {
         margin-bottom: 40px;
+    }
+
+    .custom-select-wrapper {
+        margin-bottom: 32px;
     }
 
     #float-label {

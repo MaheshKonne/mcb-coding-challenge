@@ -20,11 +20,14 @@ ul {
 }
 
 button {
-  padding: 15px;
-  height: 42px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  height: 48px;
   min-width: 84px;
   border: none;
   outline: none;
+  transition: all 0.1s;
 }
 
 button, li, a {
