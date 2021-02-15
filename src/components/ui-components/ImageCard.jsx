@@ -5,7 +5,7 @@ import './ImageCard.scss';
 const ImageCard = ({ title, description, image,  }) => {
     return (
         <div className="imageCard">
-            <img src={image} />
+            <img src={image} alt={title} />
             <Title className="title">{title}</Title>
             <div className="description">{description}</div>
         </div>

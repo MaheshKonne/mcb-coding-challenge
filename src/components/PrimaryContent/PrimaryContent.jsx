@@ -18,7 +18,7 @@ const PrimaryContent = () => {
                 </div>
                 <div className="descContainer">
                     <div>
-                        <img src={boxImg} />
+                        <img src={boxImg} alt="box image" />
                         <div>
                             Et has minim elitr intellegat. Mea 
                             aeterno eleifend antiopam ad, 
@@ -26,7 +26,7 @@ const PrimaryContent = () => {
                         </div>
                     </div>
                     <div>
-                        <img src={truckImg} />
+                        <img src={truckImg} alt="truck image" />
                         <div>
                             Et has minim elitr intellegat. Mea 
                             aeterno eleifend antiopam ad, 
@@ -36,7 +36,7 @@ const PrimaryContent = () => {
                 </div>
             </div>
             <div className="imageContainer">
-                <img src={primaryImg} />
+                <img src={primaryImg} alt="about image" />
             </div>
         </section>
     );

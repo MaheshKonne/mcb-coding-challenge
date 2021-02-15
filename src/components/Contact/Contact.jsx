@@ -20,7 +20,7 @@ const Contact = () => {
     return (
         <div className="contact">
             <div className="imageContainer">
-                <img src={contactImg} />
+                <img src={contactImg} alt="contact image" />
             </div>
             <div className="formContainer">
                 <Title size="l" color="black">Join the DSGN Community.</Title>

@@ -3,7 +3,7 @@ import InputField from './InputField';
 
 const DateInput = ({value, onChange, label}) => {
     const onDateChange = (date) => {
-        debugger;
+        onChange(date);
     };
 
     return (
