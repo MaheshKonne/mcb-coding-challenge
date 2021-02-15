@@ -16,8 +16,17 @@ footer {
     }
 
     @include desktop {
-        width: auto;
+        width: 90%;
+        max-width: $contentWidth;
+        margin-left: auto;
+        margin-right: auto;
         text-align: left;
+    }
+
+    @include large-desktop {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     hr {

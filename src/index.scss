@@ -1,16 +1,11 @@
+@import './fonts.scss';
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Muli';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 14px;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
 
 ul {
@@ -21,15 +16,39 @@ ul {
 
 button {
   display: flex;
+  font-size: 14px;
+  font-family: Muli;
   align-items: center;
+  justify-content: center;
   padding: 0 15px;
   height: 48px;
   min-width: 84px;
   border: none;
   outline: none;
   transition: all 0.1s;
+  letter-spacing: 0.21px;
 }
 
 button, li, a {
   cursor: pointer;
+}
+
+a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ba4188;
+  text-decoration: none;
+
+  &:hover {
+    color: #d9e4e6;
+  }
+
+  &.underlined {
+    text-decoration: underline;
+  }
+
+  &.inverted {
+    color: #fff;
+
+  }
 }

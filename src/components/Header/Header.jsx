@@ -6,16 +6,24 @@ const Header = () => {
     return (
         <div className="header">
             <div className="contentContainer">
-                <div>
-                    <span>DSGN</span>
-                    <span>.mu</span>
+                <div className="logo">
+                    <span className="primary">DSGN</span>
+                    <span className="secondary">.mu</span>
                 </div>
                 <nav>
                     <ul>
-                        <li>About</li>
-                        <li>Products</li>
-                        <li>Contact</li>
-                        <li>Help</li>
+                        <li>
+                            <a className="inverted" href="#About">About</a>
+                        </li>
+                        <li>
+                            <a className="inverted" href="#Products">Products</a>
+                        </li>
+                        <li>
+                            <a className="inverted" href="#Contact">Contact</a>
+                        </li>
+                        <li>
+                            <a className="inverted" href="#About">Help</a>
+                        </li>
                     </ul>
                 </nav>
                 <div>

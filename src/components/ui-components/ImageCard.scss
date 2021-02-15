@@ -5,6 +5,15 @@
     max-width: 255px;
     text-align: center;
     margin-bottom: 35px;
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    img {
+        width: 100%;
+    }
 
     @include desktop {
         margin-bottom: 0;

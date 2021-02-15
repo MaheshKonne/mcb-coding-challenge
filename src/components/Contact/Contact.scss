@@ -10,15 +10,25 @@
     @include tablet {
         max-width: 80%;
         margin: 0 auto;
+        button {
+            margin: auto;
+        }
     }
 
     @include desktop {
         height: 600px;
-        max-width: 100%;
+        margin-top: 80px;
+        width: 90%;
+        max-width: $contentWidth;
         flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
 
         > div {
             width: 50%;
+        }
+        button {
+            margin: 0;
         }
     }
 
@@ -27,10 +37,10 @@
     }
 
     .imageContainer {
-        @include tablet {
-            margin-right: 38px;
-        }
+        display: none;
+        margin-right: 38.5px;
         @include desktop {
+            display: block;
             margin-top: 10px;
         }
         img {
@@ -40,8 +50,11 @@
 
     .formContainer {
         text-align: center;
-        #float-label {
-            maxwidth: 400px;
+        @include tablet {
+            text-align: left;
+        }
+        #float-label, .custom-select-wrapper {
+            max-width: 400px;
         }
     }
 

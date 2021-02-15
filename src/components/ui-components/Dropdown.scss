@@ -1,5 +1,6 @@
 .custom-select-wrapper {
     position: relative;
+    color: #737b7d;
 
 
     .icon {
@@ -18,6 +19,7 @@
         .label {
             position: absolute;
             top: 50%;
+            color: #737b7d;
             transform: translateY(-50%);
             transform-origin: top left;
             transition: all 0.2s ease-out;
@@ -80,7 +82,7 @@
         background-color: #d5d8d5;
     }
     .custom-option.selected {
-        color: #ffffff;
-        background-color: #305c91;
+        color: #737b7d;
+        background-color: #d5d8d5;
     }
 }

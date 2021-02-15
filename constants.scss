@@ -16,3 +16,7 @@ $lightgrey: #707070;
 @mixin desktop {
     @media (min-width: 1024px) { @content; }
 }
+
+@mixin large-desktop {
+    @media (min-width: 1440px) { @content; }
+}

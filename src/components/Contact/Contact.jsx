@@ -27,11 +27,10 @@ const Contact = () => {
                 <InputField label="Name" value={name} onChange={setName} />
                 <InputField label="Email address" value={email} onChange={setEmail} />
                 <DateInput label="Date of birth" value={dob} onChange={setDob} />
-                <InputField label="Designation" />
                 <Dropdown label="Designation" options={['Tesla', 'Volvo', 'Mercedes']} onChange={onDesignationChange} />
                 <Checkbox>
                     <span>
-                        Accept the <a href="#">Terms & Conditions</a>
+                        Accept the <a className="underlined" href="#">Terms & Conditions</a>
                     </span>
                 </Checkbox>
                 <Button variant="contained">Submit</Button>

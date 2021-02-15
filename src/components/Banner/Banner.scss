@@ -10,9 +10,11 @@
     justify-content: center;
     text-align: center;
 
+
     @include desktop {
         justify-content: flex-end;
-        margin-right: 30px;
+        margin: 0 auto;
+        width: 90%;
 
         .bannerContent {
             text-align: left;
@@ -21,7 +23,19 @@
 
     .bannerContent {
         width: 430px;
-
+        .title {
+            line-height: 1.27;
+        }
+        @include tablet {
+            button {
+                margin: 0 auto;
+            }
+        }
+        @include desktop {
+            button {
+                margin: 0;
+            }
+        }
     }
 
     .bannerDesc {
