@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Dropdown.scss';
 import { ReactComponent as ArrowImg } from '../../assets/arrow.svg';
 
@@ -8,13 +8,25 @@ const Dropdown = ({ label, options = [], onChange }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleState = () => {
-        setIsOpen(!isOpen);
+        setIsOpen(prev => {
+            return !prev;
+        });
     };
 
     const onOptionSelect = (selectedOption) => {
         setValue(selectedOption);
         onChange(selectedOption);
     };
+
+    useEffect(() => {
+        document.addEventListener('click', (event) => {
+            const selectWrapper = event.target.closest('.custom-select-wrapper');
+            const isDdOpened = document.querySelector('.custom-select').classList.contains('open');
+            if(!selectWrapper && isDdOpened) {
+                toggleState();
+            }
+        });
+    }, [])
 
     return (
         <div className="custom-select-wrapper" onClick={toggleState}>
